@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    background-color: #f5f5f1;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 30px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.608);
+}
+
+.card-image{
+    height: 240px;
+    width: 220px;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info{
+    margin: 20px 0;
+}
+
+.info h5{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
