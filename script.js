@@ -41,18 +41,28 @@ const team=[
 
 console.log(team);
 
-let cardImage= document.querySelector(".card-image");
-const info= document.querySelector(".info");
+let card= document.querySelector(".card")
 
 for(let i = 0; i < team.length; i++){
 
     // Facciamo tornare tutti gli elementi dell'array
     let teamIesimo= team[i];
-    const item =`<img src="${teamIesimo["foto"]}" alt="image">`;
-    cardImage.innerHTML+= item;
+    
+    let nomeMembro = teamIesimo.nome;
+    let ruoloMembro= teamIesimo.ruolo;
+    let fotoMembro= teamIesimo.foto;
 
-    const infoCard=`<h5>${teamIesimo["nome"]}</h5> <span>${teamIesimo["ruolo"]}</span>`;
-    info.innerHTML+= infoCard;
+    let elCard =` <div class="card">
+                        <div class="card-image">
+                            <img/ src="${fotoMembro}" alt="">
+                        </div>
+                        <div class="info">
+                            <h5>${nomeMembro}</h5>
+                            <span>${ruoloMembro}</span>
+                        </div>
+                    </div>`
+    
+    card.innerHTML += elCard
     
 
     // Facciamo tornare i valori dentro gli elementi
